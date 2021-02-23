@@ -1,4 +1,4 @@
-package com.example.taskapp26.ui.home;
+ package com.example.taskapp26.ui.home;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,7 +62,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.Viewholder>{
             super(itemView);
             textView = itemView.findViewById(R.id.text_view);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     onItemClickListener.onClick(getAdapterPosition());
